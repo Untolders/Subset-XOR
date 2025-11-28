@@ -21,7 +21,10 @@ Constraints:
 1 ≤ n ≤ 105
 
 ```cpp
- int xr = 0;
+class Solution {
+  public:
+    vector<int> subsetXOR(int n) {
+        int xr = 0;
         for(int i = 1; i <= n; i++)
         {
           xr ^= i;   
@@ -43,4 +46,7 @@ Constraints:
             }
         }
         return ans;
+    }
+};
+
 ```
